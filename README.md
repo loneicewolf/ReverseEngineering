@@ -17,3 +17,9 @@ A repo I make for some of my friends who requested a beginner friendly repo that
 #### 2 Making the same Module but adding Shellcode execution to it
 #### 3 merging and loading it; first test
 #### 4 Huoston we have a problem; how to unload and auto start?
+
+
+
+### Refereces; and further reading
+- https://github.com/loneicewolf/KernelMode-Code
+- https://github.com/loneicewolf/EXEC_LKM
