@@ -4,7 +4,10 @@
 :warning: FIRST OFF; there will be grammar errors! will correct those later.
 
 
-check the basic.md file for the "most" current progress. includes a basic hello world tutorial in ASM and how I google for errors.  https://github.com/loneicewolf/ReverseEngineering/blob/main/SampleFiles/basic.md
+check the basic.md file for the "most" current progress. includes a basic hello world tutorial in ASM and how I google for errors.
+- basics (asm hello world, some shellcode execution.  later) https://github.com/loneicewolf/ReverseEngineering/blob/main/SampleFiles/basic.md
+- advanced (cheat engine and scripts, tweaking, etc.  later) https://github.com/loneicewolf/ReverseEngineering/blob/main/SampleFiles/Advanced_02.MD
+
 
 
 
