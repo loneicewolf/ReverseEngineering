@@ -4,6 +4,10 @@
 :warning: FIRST OFF; there will be grammar errors! will correct those later.
 
 
+check the basic.md file for the "most" current progress. includes a basic hello world tutorial in ASM and how I google for errors.  https://github.com/loneicewolf/ReverseEngineering/blob/main/SampleFiles/basic.md
+
+
+
 A repo I make for some of my friends who requested a beginner friendly repo that has examples; links and different methods to create; compile and execute shellcode in various languages.
 
 
