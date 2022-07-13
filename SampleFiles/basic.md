@@ -158,11 +158,14 @@ rm hello.o
 ## https://stackoverflow.com/a/20881370/14346786
 nasm -f elf64 hello.asm
 ld -s -o hello hello.o 
+./hello
+#	Hello, world!
 ```
 
 it works! noting that down and making a permanent change to our `doit.sh` file
 
-# new contents of file `doit.sh`
+#### new contents of file `doit.sh`
+
 ```
 ## v1
 	## echo "1) [+] object code NASM" && nasm -f elf hello.asm
@@ -170,27 +173,38 @@ it works! noting that down and making a permanent change to our `doit.sh` file
 ## v2
 ## fix: #	2) 	ld: i386 architecture of input file `hello.o' is incompatible with i386:x86-64 output
 ## https://stackoverflow.com/a/20881370/14346786
+
 nasm -f elf64 hello.asm
 ld -s -o hello hello.o
+./hello
 ```
+
+test it..
 
 ```
 bash doit.sh
+#	Hello, world!
 ```
-
 
 - works! write back some echo's if you want; I will skip it;
 
 
+### backup the project
+```
+mkdir done
+cp * done
+```
+
+### that was   hello world in ASM  
 
 
 
+sources:
+- google
+- stackoverflow
+- tldp
 
 
 
-
-
-
-
-
-
+TODO (for myself)
+:warning: `summary here later`
