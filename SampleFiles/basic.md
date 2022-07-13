@@ -121,8 +121,8 @@ bash doit.sh
 
 ❗ error; it complains about something with i386 and architecture, being incompat. with some ; obscure output `i386:x86-64 output` ?
 
-original error: `ld: i386 architecture of input file `hello.o' is incompatible with i386:x86-64 output`
-shortened down error: `ld: i386 arch input file incompatible i386:x86-64 output`
+- original error: `ld: i386 architecture of input file `hello.o' is incompatible with i386:x86-64 output`
+- shortened down error: `ld: i386 arch input file incompatible i386:x86-64 output`
 
 📙
 Query Google "ld: i386 arch input file incompatible i386:x86-64 output"
