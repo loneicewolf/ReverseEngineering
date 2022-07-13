@@ -1,5 +1,5 @@
 ### note please read:
-dont just copy paste. I have tried to make this as simple as possible;
+don't just copy paste. I have tried to make this as simple as possible;
 by (even) actually including google-queries of errors you might encounter.
 the reason for this is to show absolute beginners how (at least my own) my methodology of problem solving works
 and looks like; when he/she gets a error. Example; a compiler barking at something.
@@ -17,7 +17,7 @@ and looks like; when he/she gets a error. Example; a compiler barking at somethi
 pros cons of different solutions?(don't only try 1 that works; try many; like 3)
 (3 different that is)
 
-make any change to the solution, and note it down, as wel las the reason behind that change/tweak.
+make any change to the solution, and note it down, as well as the reason behind that change/tweak.
 
 
 ### 📗 as I will surely get this question:
@@ -119,7 +119,7 @@ bash doit.sh
 ```
 
 
-❗ error; it complains about something with i386 and architecture, being incompat. with some ; obscure output `i386:x86-64 output` ?
+❗ error; it complains about something with i386 and architecture, being incompatible. with some ; obscure output `i386:x86-64 output` ?
 
 - original error: `ld: i386 architecture of input file `hello.o' is incompatible with i386:x86-64 output`
 - shortened down error: `ld: i386 arch input file incompatible i386:x86-64 output`
@@ -134,8 +134,8 @@ Query Google "ld: i386 arch input file incompatible i386:x86-64 output"
 (....)
 
 
-the error is slighly different but still is Kinda like ours; doesn't hurt to try ?
-- trying this answer (which isn't by the tiem writing this; accepted)
+the error is slightly different but still is Kinda like ours; doesn't hurt to try ?
+- trying this answer (which isn't by the time writing this; accepted)
 - https://stackoverflow.com/a/20881370/14346786
 
 ```
@@ -144,7 +144,7 @@ the error is slighly different but still is Kinda like ours; doesn't hurt to try
 	This should solve your error
 ```
 
-trying it; but tweaking the commanda bit, to match our `hello` context
+trying it; but tweaking the command a bit, to match our `hello` context
 (note: I use the word `context` just arbitrarily here; just to note our hello-file, which might be our hello executable; hello object file, and so on) (to avoid confusion)
 
 first we try it manually;
