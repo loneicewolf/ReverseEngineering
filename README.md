@@ -1,5 +1,8 @@
 # Reverse Engineering
 
+
+`if you want a laugh; read THE WHOLE  SECURITY.MD file. (the whole, very important)`
+
 :warning: FIRST OFF; there will be grammar errors! will correct those later.
 
 
