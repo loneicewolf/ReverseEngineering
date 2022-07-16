@@ -1,0 +1,53 @@
+
+
+hello_world.c
+-------------
+
+#include <stdio.h>
+int main(){
+printf("ABC");
+return 0;
+}
+
+-------------
+
+...
+from  gcc --help
+
+NOTES below only. some might not be actual args:
+
+  -g
+  -03
+  -g03
+  -W*
+  -no-pie
+  -time
+  -fasmverb
+
+
+
+...
+  -S                       Compile only; do not assemble or link.
+  -c                       Compile and assemble, but do not link.
+  -pie                     Create a dynamically linked position independent executable.
+  -shared                  Create a shared library.
+  -x <language>            Specify the language of the following input files.   Permissible languages include: c c++ assembler none 'none' means revert to the default behavior of guessing the language based on the file's extension.
+  
+...
+
+  Options starting with -g, -f, -m, -O, -W, or --param are automatically
+   passed on to the various sub-processes invoked by gcc.  In order to pass
+   other options on to these processes the -W<letter> options must be used.
+
+
+
+# make `.s` file
+gcc -S hello_world.c
+
+
+# make `.o` file
+gcc -c hello_world.c
+
+
+
+
