@@ -12,6 +12,92 @@ return 0;
 -------------
 
 ...
+
+
+
+---------- sub pan snippets ----------
+rm *.s *.o
+ls *.s *.o
+
+objdump hello_world.o -d -Mintel  #intel
+objdump hello_world.o -d -Matt    #att
+
+## `.o` files
+## also works on `.elf` files
+
+  #objdump -Mintel -dS hello_world.o
+  #objdump -Mintel-mnemonic -dS hello_world.o
+  #objdump --visualize-jumps -Mintel-mnemonic -dS hello_world.o
+  #objdump --visualize-jumps=extended-color -Mintel-mnemonic -dS hello_world.o
+
+
+
+
+sub sub pan snippets
+####################
+#
+NOT sorted, probably wrong. will fix later.
+#
+
+rm A            2>/dev/null
+rm A.objdump    2>/dev/null
+rm A.objdump.D  2>/dev/null
+rm A.objdump.d  2>/dev/null
+#gcc -g  a.c -o A  &&  objdump -d A >> A.objdump.d  &&  objdump -D A >> A.objdump.D
+
+
+
+#3 03 PIE etc x
+#gcc -g3  a.c -o A  &&  objdump -d A >> A.objdump.d  &&  objdump -D A >> A.objdump.D
+gcc -g03  a.c -o A  &&  objdump -d A >> A.objdump.d  &&  objdump -D A >> A.objdump.D
+
+
+
+apropos "assembler"
+
+                r2 (1)               - Advanced command-line hexadecimal editor, disassembler and debugger
+                radare2 (1)          - Advanced command-line hexadecimal editor, disassembler and debugger
+                rasm2 (1)            - radare2 assembler and disassembler tool
+                as (1)               - the portable GNU assembler.
+                i686-w64-mingw32-as (1) - the portable GNU assembler.
+                llvm-as-13 (1)       - LLVM assembler
+                llvm-dis-13 (1)      - LLVM disassembler
+                nasm (1)             - the Netwide Assembler, a portable 80x86 assembler
+                ndisasm (1)          - the Netwide Disassembler, an 80x86 binary file disassembler
+                x86_64-linux-gnu-as (1) - the portable GNU assembler.
+                x86_64-w64-mingw32-as (1) - the portable GNU assembler.
+
+
+apropos "disassembler"
+
+                r2 (1)               - Advanced command-line hexadecimal editor, disassembler and debugger
+                radare2 (1)          - Advanced command-line hexadecimal editor, disassembler and debugger
+                rasm2 (1)            - radare2 assembler and disassembler tool
+                llvm-dis-13 (1)      - LLVM disassembler
+                ndisasm (1)          - the Netwide Disassembler, an 80x86 binary file disassembler
+
+
+whatis rabin2 radare2 radiff2 rafind2 ragg2 rahash2 rasign2 rasm2 ravc2 rax2
+
+                rabin2 (1)           - Binary program info extractor
+                radare2 (1)          - Advanced command-line hexadecimal editor, disassembler and debugger
+                radiff2 (1)          - unified binary diffing utility
+                rafind2 (1)          - Advanced command-line hexadecimal editor
+                ragg2 (1)            - radare2 frontend for r_egg, compile programs into tiny binaries for x86-32/64 and arm.
+                rahash2 (1)          - block based hashing utility
+                rasign2 (1)          - radare2 zignature utility
+                rasm2 (1)            - radare2 assembler and disassembler tool
+                ravc2 (1)            - radare version control
+                rax2 (1)             - radare base converter
+
+
+#####################
+
+
+
+---------- sub pan snippets ----------
+
+
 from  gcc --help
 
 NOTES below only. some might not be actual args:
