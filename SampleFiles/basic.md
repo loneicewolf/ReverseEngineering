@@ -86,6 +86,37 @@ msg db      "Hello, world!",0xa ;our dear string
 len equ     $ - msg             ;length of our dear string
 ```
 
+## same but smaller
+- `without comments(no explains that is), spaces(unnec spaces that is), and small tweaks to make it smaller, but too many changes(keeping it still as same code))`
+
+```
+
+section .text
+global _start
+_start:
+	mov edx,len
+	mov ecx,msg
+	mov ebx,1
+	mov eax,4
+	int 0x80
+	mov ebx,0
+	mov eax,1
+	int 0x80
+
+section .data
+	;;msg db "Hello, world!",0xa
+	;;same but without a newline at end
+	;;; test it with printf:  $ printf "abc"   and  $ printf "abc\x0a"  and finally  printf "abc\n" 
+	;;; (compare the 2 last, with md5, and you will see it does indeed match)
+	msg db "Hello, world!"
+	len equ $ - msg
+
+```
+
+
+
+
+
 ### doit.sh contents
 
 ```
